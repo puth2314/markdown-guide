@@ -30,6 +30,8 @@ I tend to forget some specific markdown syntax; by which this guide provides a n
 
 This is a subset of the actual guide because this `README.md` is compiled using Github-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/main/src/markdown-guide.html) instead.
 
+The ![LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/main/src/markdown-guide.pdf) and ![beamer slides](https://github.com/puth2314/markdown-guide/blob/main/src/markdown-slide.pdf) are also in repository; although direct compilation one markdown file into multiple formats often yield awkward formatting to at least one format (because that markdown file is not written to conform that format).
+
 # What is markdown?
 
 Markdown is a markup language with plain text formatting syntax (basically better text). It converts plain text to HTML.
