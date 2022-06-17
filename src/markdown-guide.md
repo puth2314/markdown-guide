@@ -385,7 +385,7 @@ Text[^footnote-identifier] with a footnote[^long-footnote] and inline^[You do no
 [^footnote-identifier]: Footnote information.
 
 [^long-footnote]: Footnote with multiple blocks.
-
+  
 	Subsequent indented paragraphs belong to the footnote.
     
     	code.isNone() == True
@@ -677,7 +677,7 @@ Term
 
 # Compiling
 
-I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://pandoc.org/).
+I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://github.com/jgm/pandoc).
 
 ## ghostwriter
 

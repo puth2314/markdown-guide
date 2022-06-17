@@ -456,7 +456,7 @@ Table: Pipe Table
 
 # Compiling
 
-I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://pandoc.org/).
+I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://github.com/jgm/pandoc).
 
 ## ghostwriter
 
