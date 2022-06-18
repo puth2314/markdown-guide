@@ -1,0 +1,5 @@
+# output of `pandoc -D latex >> <foo-template.tex>`
+*template.tex
+
+# backup files from `ghostwriter`
+*.md.backup
