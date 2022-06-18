@@ -28,7 +28,7 @@ Welcome to my (arguably scuffed) markdown guide. The aim to provide the general 
 
 I tend to forget some specific markdown syntax; by which this guide provides a nice reference for. Also, writing this markdown guide in markdown is just wonderful.
 
-This is a subset of the actual guide because this `README.md` is compiled using Github-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/main/src/markdown-guide.html) instead.
+This is a subset of the actual guide because this `README.md` is compiled using GitHub-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/main/src/markdown-guide.html) instead.
 
 The ![LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/main/src/markdown-guide.pdf) and ![beamer slides](https://github.com/puth2314/markdown-guide/blob/main/src/markdown-slide.pdf) are also in the repository; although direct compilation one markdown file into multiple formats often yield awkward formatting to at least one format (because that markdown file is not written to conform that format).
 
@@ -44,7 +44,7 @@ Markdown is a markup language with plain text formatting syntax (basically bette
 
 # Where is markdown used?
 
-- Repositories such as [Github](https://github.com/) (`README.md` files) for software documentation.
+- Repositories such as [GitHub](https://github.com/) (`README.md` files) for software documentation.
 - Forums and blog posts within applications or websites.
 - Static websites.
 - Documents and notes.

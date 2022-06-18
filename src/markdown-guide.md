@@ -40,7 +40,7 @@ Markdown is a markup language with plain text formatting syntax (basically bette
 
 # Where is markdown used?
 
-- Repositories such as [Github](https://github.com/) (`README.md` files) for software documentation.
+- Repositories such as [GitHub](https://github.com/) (`README.md` files) for software documentation.
 - Forums and blog posts within applications or websites.
 - Static websites.
 - Documents and notes.
