@@ -72,7 +72,7 @@ Also sub-heading
 ---
 ```
 
-## Compiled
+## Formatted
 
 # Heading
 ## Sub-heading
@@ -98,7 +98,7 @@ produce a line break.
 Text attributes: _italic_, *also italic*, **bold**, __also bold__, `mono-space`, ~~strike-through~~.
 ```
 
-## Compiled
+## Formatted
 
 Paragraphs are separated by a blank line.
 
@@ -146,7 +146,7 @@ Ordered list:
 4. Cuatro
 ```
 
-## Compiled
+## Formatted
 
 Unordered list:
 
@@ -191,7 +191,7 @@ A <https://directlink.tv> and <directlink@email.org>.
 [identifier]: https://www.google.com "Google Home"
 ```
 
-## Compiled
+## Formatted
 
 A [Wikipedia](https://www.wikipedia.org "Wikipedia Home") and [Google][identifier] hyper-link.
 
@@ -220,7 +220,7 @@ Also also horizontal rule:
 ***
 ```
 
-## Compiled
+## Formatted
 
 Horizontal rule:
 
@@ -244,7 +244,7 @@ Text within the quotes after the image directory is the text displayed when the 
 ![Markdown Icon](./src/figures/markdown-icon.png  "Markdown Icon")
 ```
 
-## Compiled
+## Formatted
 
 ![Markdown Icon](./src/figures/markdown-icon.png  "Markdown Icon")
 
@@ -266,7 +266,7 @@ Prepend a `>` in every line of the block for a block-quote.
 >>>
 ```
 
-## Compiled
+## Formatted
 
 > Append two space in first line  
 > for a line-break in blockquote.
@@ -315,7 +315,7 @@ for(int i=0;i++;i<42){
 	malloc(free(42))
 ```
 
-## Compiled
+## Formatted
 
 ```Python
 # A code-block
@@ -354,7 +354,7 @@ Comment
 [///]: # (This will not be included in the output file.)
 ```
 
-## Compiled
+## Formatted
 
 <Comment>
 
@@ -382,7 +382,7 @@ Text[^footnote-identifier] with a footnote[^long-footnote].
     	code.isNone() == True
 ```
 
-## Compiled
+## Formatted
 
 Text[^footnote-identifier] with a footnote[^long-footnote].
 
@@ -408,7 +408,7 @@ Surround LaTeX code with double `$`.
 $$\frac{some}{69}\cdot\frac{420}{LaTeX}$$
 ```
 
-## Compiled
+## Formatted
 
 $$\frac{some}{69}\cdot\frac{420}{LaTeX}$$
 
@@ -429,7 +429,7 @@ Generally and unfortunately, for some table styles, you cannot directly set the 
 Table: Pipe Table
 ```
 
-## Compiled
+## Formatted
 
 |Left|Centre|Right|
 |:--|:-:|--:|
@@ -449,12 +449,12 @@ Table: Pipe Table
 - [ ] Not done.
 ```
 
-## Compiled
+## Formatted
 
 - [x] Done.
 - [ ] Not done.
 
-# Compiling
+# Software
 
 I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://github.com/jgm/pandoc).
 
