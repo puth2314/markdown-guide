@@ -36,7 +36,7 @@ Markdown is a markup language with plain text formatting syntax (basically bette
 
 - Markdown is incredibly lightweight compared to rich text formats; such as `.rtf` or `.docx`.
 - It is arguably the simplest markup language there is.
-- Can be converted to a plethora of formats seamlessly, such as `.html`, `.tex`, `.pdf`, etc.
+- Can be converted to a plethora of formats seamlessly, such as `.html`, `.pdf`, `.docx`, etc. (which implies that `.md` files are essentially future-proof).
 
 # Where is markdown used?
 
