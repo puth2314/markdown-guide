@@ -7,7 +7,9 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Run script for html
-        run: bash convert-to.sh html
+        run: |
+          ls
+          bash convert-to.sh html
         shell: bash
         working-directory: scripts
   convert-to-pdf:
