@@ -5,8 +5,10 @@ on: push
 jobs:
   convert-markdown:
     name: Convert markdown
-    runs-on: windows-latest
-    working-directory: .
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
     steps:
       - name: Run for html
         run: bash scripts/convert-to.sh html
@@ -14,4 +16,3 @@ jobs:
       - name: Run for pdf
         run: bash scripts/convert-to.sh pdf
         shell: bash
-        
