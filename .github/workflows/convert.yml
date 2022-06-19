@@ -6,6 +6,9 @@ jobs:
   convert-to-html:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+      - uses: actions/checkout@v2
+      - name: Convert via pandoc
       - uses: docker://pandoc/core:2.9
         with:
           args: "src/markdown-guide.md -o build/markdown-guide.html -s --mathjax"
