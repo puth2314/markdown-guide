@@ -829,7 +829,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <dd>This is an alternate definition.
 </dd>
 </dl>
-<h1 id="software">Software</h1>
+<h1 id="compiling">Compiling</h1>
 <p>I mainly use <a href="https://github.com/wereturtle/ghostwriter">ghostwriter</a> and <a href="https://github.com/jgm/pandoc">pandoc</a>.</p>
 <h2 id="ghostwriter">ghostwriter</h2>
 <ul>
@@ -840,11 +840,11 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li>Can <code>Export</code> directly.</li>
 <li>Can use <code>Distraction Free Mode</code> with no HUD and no HTML preview.</li>
 </ul>
-<h2 id="pandoc">pandoc</h2>
+<h2 id="pandoc">Pandoc</h2>
 <ul>
 <li>To HTML example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-guide.html -s --mathjax</code>.</li>
 <li>To PDF example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-guide.pdf --pdf-engine=pdflatex</code>.</li>
-<li>To beamer example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-slide.pdf -t beamer -V theme:Luebeck</code>. Note: beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.</li>
+<li>To Beamer example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-slide.pdf -t beamer -V theme:Luebeck</code>. Note: Beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.</li>
 <li><code>-s</code> means standalone and not a fragment; e.g. an HTML file with <code>head</code> and <code>body</code>.</li>
 <li><code>-f</code> and <code>-t</code> specifies input and output format respectively (markdown, latex, html), otherwise format is interpreted from file type.</li>
 <li><code>--toc</code> for table of contents; useful with <code>-c style.css</code>.</li>
