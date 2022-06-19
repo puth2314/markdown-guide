@@ -237,12 +237,12 @@ Text within the quotes after the image directory is the text displayed when the 
 ## Raw
 
 ```
-![Markdown Icon](./figures/markdown-icon.png  "Markdown Icon")
+![Markdown Icon](../figures/markdown-icon.png  "Markdown Icon")
 ```
 
 ## Formatted
 
-![Markdown Icon](./figures/markdown-icon.png  "Markdown Icon")
+![Markdown Icon](../figures/markdown-icon.png  "Markdown Icon")
 
 # Block-quotes
 
@@ -385,15 +385,11 @@ Text[^footnote-identifier] with a footnote[^long-footnote] and inline^[You do no
 [^footnote-identifier]: Footnote information.
 
 [^long-footnote]: Footnote with multiple blocks.
-  
+
 	Subsequent indented paragraphs belong to the footnote.
     
     	code.isNone() == True
-
-<!--
-beamer does not like footnotes with multiple blocks
--->
-
+	
 # LaTeX
 
 Surround LaTeX code with double `$`.
@@ -690,9 +686,9 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 
 ## pandoc
 
-- To HTML example snippet: `pandoc .\markdown-guide.md -o markdown-guide.html -s --mathjax`.
-- To PDF example snipper: `pandoc .\markdown-guide.md -o markdown-guide.pdf --pdf-engine=pdflatex`.
-- To beamer example snippet: `pandoc .\markdown-guide.md -o markdown-slide.pdf -t beamer -V theme:Luebeck`.
+- To HTML example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.html -s --mathjax`.
+- To PDF example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.pdf --pdf-engine=pdflatex`.
+- To beamer example snippet: `pandoc src/markdown-guide.md -o build/markdown-slide.pdf -t beamer -V theme:Luebeck`. Note: beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.
 - `-s` means standalone and not a fragment; e.g. an HTML file with `head` and `body`.
 - `-f` and `-t` specifies input and output format respectively (markdown, latex, html), otherwise format is interpreted from file type.
 - `--toc` for table of contents; useful with `-c style.css`.

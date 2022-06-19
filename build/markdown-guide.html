@@ -254,7 +254,7 @@ Also Heading
 ===
 Also sub-heading
 ---</code></pre>
-<h2 id="compiled">Compiled</h2>
+<h2 id="formatted">Formatted</h2>
 <h1 id="heading">Heading</h1>
 <h2 id="sub-heading">Sub-heading</h2>
 <h3 id="sub-sub-heading">Sub-sub-heading</h3>
@@ -270,7 +270,7 @@ Two spaces at the end of a line
 produce a line break.
 
 Text attributes: _italic_, *also italic*, **bold**, __also bold__, `mono-space`, ~~strike-through~~.</code></pre>
-<h2 id="compiled-1">Compiled</h2>
+<h2 id="formatted-1">Formatted</h2>
 <p>Paragraphs are separated by a blank line.</p>
 <p>Two spaces at the end of a line<br />
 produce a line break.</p>
@@ -308,7 +308,7 @@ Ordered list:
 3) Tres
 
 4. Cuatro</code></pre>
-<h2 id="compiled-2">Compiled</h2>
+<h2 id="formatted-2">Formatted</h2>
 <p>Unordered list:</p>
 <ul>
 <li><p>Fruits</p>
@@ -344,7 +344,7 @@ Ordered list:
 A &lt;https://directlink.tv&gt; and &lt;directlink@email.org&gt;.
 
 [identifier]: https://www.google.com &quot;Google Home&quot;</code></pre>
-<h2 id="compiled-3">Compiled</h2>
+<h2 id="formatted-3">Formatted</h2>
 <p>A <a href="https://www.wikipedia.org" title="Wikipedia Home">Wikipedia</a> and <a href="https://www.google.com" title="Google Home">Google</a> hyper-link.</p>
 <p>A <a href="https://directlink.tv" class="uri">https://directlink.tv</a> and <a href="mailto:directlink@email.org" class="email">directlink@email.org</a>.</p>
 <h1 id="horizontal-rule">Horizontal Rule</h1>
@@ -361,7 +361,7 @@ ___
 Also also horizontal rule:
 
 ***</code></pre>
-<h2 id="compiled-4">Compiled</h2>
+<h2 id="formatted-4">Formatted</h2>
 <p>Horizontal rule:</p>
 <hr />
 <p>Also horizontal rule:</p>
@@ -371,10 +371,10 @@ Also also horizontal rule:
 <h1 id="images">Images</h1>
 <p>Text within the quotes after the image directory is the text displayed when the image directory is not found.</p>
 <h2 id="raw-5">Raw</h2>
-<pre><code>![Markdown Icon](./figures/markdown-icon.png  &quot;Markdown Icon&quot;)</code></pre>
-<h2 id="compiled-5">Compiled</h2>
+<pre><code>![Markdown Icon](../figures/markdown-icon.png  &quot;Markdown Icon&quot;)</code></pre>
+<h2 id="formatted-5">Formatted</h2>
 <figure>
-<img src="./figures/markdown-icon.png" title="Markdown Icon" alt="Markdown Icon" /><figcaption aria-hidden="true">Markdown Icon</figcaption>
+<img src="../figures/markdown-icon.png" title="Markdown Icon" alt="Markdown Icon" /><figcaption aria-hidden="true">Markdown Icon</figcaption>
 </figure>
 <h1 id="block-quotes">Block-quotes</h1>
 <p>Prepend a <code>&gt;</code> in every line of the block for a block-quote.</p>
@@ -388,7 +388,7 @@ Also also horizontal rule:
 &gt;&gt;
 &gt;&gt;&gt; Even deeper block-quote.
 &gt;&gt;&gt;</code></pre>
-<h2 id="compiled-6">Compiled</h2>
+<h2 id="formatted-6">Formatted</h2>
 <blockquote>
 <p>Append two space in first line<br />
 for a line-break in blockquote.</p>
@@ -423,7 +423,7 @@ for(int i=0;i++;i&lt;42){
 ~~~</code></pre>
 <pre><code>    free(malloc(69))
     malloc(free(42))</code></pre>
-<h2 id="compiled-7">Compiled</h2>
+<h2 id="formatted-7">Formatted</h2>
 <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A code-block</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(x):</span>
@@ -449,7 +449,7 @@ Comment
 [//]: # (This is the most platform independent syntax.)
 
 [///]: # (This will not be included in the output file.)</code></pre>
-<h2 id="compiled-8">Compiled</h2>
+<h2 id="formatted-8">Formatted</h2>
 <p><Comment></p>
 <!--
 Comment
@@ -465,16 +465,13 @@ Comment
     Subsequent indented paragraphs belong to the footnote.
     
         code.isNone() == True</code></pre>
-<h2 id="compiled-9">Compiled</h2>
+<h2 id="formatted-9">Formatted</h2>
 <p>Text<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> with a footnote<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> and inline<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
-<!--
-beamer does not like footnotes with multiple blocks
--->
 <h1 id="latex">LaTeX</h1>
 <p>Surround LaTeX code with double <code>$</code>.</p>
 <h2 id="raw-10">Raw</h2>
 <pre><code>$$\frac{some}{69}\cdot\frac{420}{LaTeX}$$</code></pre>
-<h2 id="compiled-10">Compiled</h2>
+<h2 id="formatted-10">Formatted</h2>
 <p><span class="math display">\[\frac{some}{69}\cdot\frac{420}{LaTeX}\]</span></p>
 <h1 id="tables">Tables</h1>
 <p>Generally and unfortunately, for some table styles, you cannot directly set the column width; unless you perform some wonky stuff with its behaviour.</p>
@@ -487,7 +484,7 @@ beamer does not like footnotes with multiple blocks
 |4,1|4,2|4,3|
 
 Table: Pipe Table</code></pre>
-<h2 id="compiled-11">Compiled</h2>
+<h2 id="formatted-11">Formatted</h2>
 <table>
 <caption>Pipe Table</caption>
 <thead>
@@ -592,7 +589,7 @@ spans two lines
 +----+------+-----+
 |4,1 | 4,2  |  4,3|
 +----+------+-----+</code></pre>
-<h2 id="compiled-12">Compiled</h2>
+<h2 id="formatted-12">Formatted</h2>
 <table>
 <caption>Simple Table</caption>
 <thead>
@@ -784,7 +781,7 @@ spans two lines
 |    like a diamond in the sky.
 |    Twinkle twinkle little star,
 |    how I wonder what you are.</code></pre>
-<h2 id="compiled-13">Compiled</h2>
+<h2 id="formatted-13">Formatted</h2>
 <div class="line-block">An iconic lullaby:<br />
    Twinkle twinkle little star,<br />
    how I wonder what you are.<br />
@@ -796,7 +793,7 @@ spans two lines
 <h2 id="raw-14">Raw</h2>
 <pre><code>- [x] Done.
 - [ ] Not done.</code></pre>
-<h2 id="compiled-14">Compiled</h2>
+<h2 id="formatted-14">Formatted</h2>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" checked="" />
 Done.</li>
@@ -810,13 +807,13 @@ Not done.</li>
 <pre><code>H~2~O is one of the main reasons to why life exists.
 
 f(x) = Ae^-bx^ describes exponential decay.</code></pre>
-<h2 id="compiled-15">Compiled</h2>
+<h2 id="formatted-15">Formatted</h2>
 <p>H<sub>2</sub>O is one of the main reasons to why life exists.</p>
 <p>f(x) = Ae<sup>-bx</sup> describes exponential decay.</p>
 <h1 id="line-break">Line-break</h1>
 <h2 id="raw-16">Raw</h2>
 <pre><code>\</code></pre>
-<h2 id="compiled-16">Compiled</h2>
+<h2 id="formatted-16">Formatted</h2>
 <p><br />
 </p>
 <h1 id="definition-list">Definition-list</h1>
@@ -824,7 +821,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <pre><code>Term
 : This is a definition.
 : This is an alternate definition.</code></pre>
-<h2 id="compiled-17">Compiled</h2>
+<h2 id="formatted-17">Formatted</h2>
 <dl>
 <dt>Term</dt>
 <dd>This is a definition.
@@ -832,7 +829,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <dd>This is an alternate definition.
 </dd>
 </dl>
-<h1 id="compiling">Compiling</h1>
+<h1 id="software">Software</h1>
 <p>I mainly use <a href="https://github.com/wereturtle/ghostwriter">ghostwriter</a> and <a href="https://github.com/jgm/pandoc">pandoc</a>.</p>
 <h2 id="ghostwriter">ghostwriter</h2>
 <ul>
@@ -845,9 +842,9 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 </ul>
 <h2 id="pandoc">pandoc</h2>
 <ul>
-<li>To HTML example snippet: <code>pandoc .\markdown-guide.md -o markdown-guide.html -s --mathjax</code>.</li>
-<li>To PDF example snipper: <code>pandoc .\markdown-guide.md -o markdown-guide.pdf --pdf-engine=pdflatex</code>.</li>
-<li>To beamer example snippet: <code>pandoc .\markdown-guide.md -o markdown-slide.pdf -t beamer -V theme:Luebeck</code>.</li>
+<li>To HTML example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-guide.html -s --mathjax</code>.</li>
+<li>To PDF example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-guide.pdf --pdf-engine=pdflatex</code>.</li>
+<li>To beamer example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-slide.pdf -t beamer -V theme:Luebeck</code>. Note: beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.</li>
 <li><code>-s</code> means standalone and not a fragment; e.g. an HTML file with <code>head</code> and <code>body</code>.</li>
 <li><code>-f</code> and <code>-t</code> specifies input and output format respectively (markdown, latex, html), otherwise format is interpreted from file type.</li>
 <li><code>--toc</code> for table of contents; useful with <code>-c style.css</code>.</li>
