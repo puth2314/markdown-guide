@@ -1,0 +1,17 @@
+name: Convert
+
+on: push
+
+jobs:
+  convert-markdown:
+    name: Convert markdown
+    runs-on: windows-latest
+    working-directory: .
+    steps:
+      - name: Run for html
+        run: bash scripts/convert-to.sh html
+        shell: bash
+      - name: Run for pdf
+        run: bash scripts/convert-to.sh pdf
+        shell: bash
+        
