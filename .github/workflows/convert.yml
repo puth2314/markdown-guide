@@ -4,9 +4,9 @@ on: push
 
 jobs:
   convert-to-html:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: docker://pandoc/core:2.9
         with:
-          args: "--help"
+          args: "src/markdown-guide.md -o build/markdown-guide.html -s --mathjax"
           
