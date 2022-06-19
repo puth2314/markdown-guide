@@ -2,6 +2,8 @@ name: Convert from Markdown
 
 on: push
 
+permissions: read-all|write-all
+
 jobs:
   convert-to-html:
     runs-on: ubuntu-latest
