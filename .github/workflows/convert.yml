@@ -11,10 +11,10 @@ jobs:
         os: [windows-latest, ubuntu-latest]
     steps:
       - name: Run for html
-        run: bash scripts/convert-to.sh html
+        run: bash convert-to.sh html
         shell: bash
-        working-directory: .
+        working-directory: ./scripts
       - name: Run for pdf
-        run: bash scripts/convert-to.sh pdf
+        run: bash convert-to.sh pdf
         shell: bash
-        working-directory: .
+        working-directory: ./scripts
