@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: chmod +x /usr/local/bin/docker-entrypoint.sh
       - uses: docker://pandoc/core:2.9
         with:
           args: "src/markdown-guide.md -o markdown-guide.html"
