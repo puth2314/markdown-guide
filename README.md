@@ -1,26 +1,6 @@
----
-title: "Markdown Guide"
-
-author:
-
-- Puthearath Aim
-
-date: \today
-
-fontsize: 12pt
-
-geometry:
-
-- top = 30mm
-- left = 20mm
-- right = 20mm
-- heightrounded
-
-linkcolor: blue
-
-toc: true
-
----
+[![html-passing](https://img.shields.io/badge/html-passing-brightgreen.svg?style=flat)](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html)
+[![pdf-passing](https://img.shields.io/badge/pdf-passing-brightgreen.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf)
+[![slide-deprecated](https://img.shields.io/badge/slide-deprecated-orange.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf)
 
 # Introduction
 
