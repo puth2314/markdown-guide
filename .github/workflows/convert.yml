@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: docker://pandoc/core:2.9
         with:
-          args: "--help"
+          args: "src/mardown-guide.md -o markdown-guide.html"
           
