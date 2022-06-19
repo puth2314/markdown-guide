@@ -9,11 +9,11 @@ jobs:
       - name: Run script for html
         run: bash convert-to.sh html
         shell: bash
-        working-directory: ./scripts
+        working-directory: scripts
   convert-to-pdf:
     runs-on: windows-latest
     steps:
       - name: Run script for pdf
         run: bash convert-to.sh pdf
         shell: bash
-        working-directory: ./scripts
+        working-directory: scripts
