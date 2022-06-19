@@ -13,6 +13,8 @@ jobs:
       - name: Run for html
         run: bash scripts/convert-to.sh html
         shell: bash
+        working-directory: .
       - name: Run for pdf
         run: bash scripts/convert-to.sh pdf
         shell: bash
+        working-directory: .
