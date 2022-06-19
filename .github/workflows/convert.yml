@@ -7,7 +7,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: docker://pandoc/core:2.9
-      - name: Run script for html
         with:
           args: "src/markdown-guide.md -o build/markdown-guide.html -s --mathjax"
   convert-to-pdf:
