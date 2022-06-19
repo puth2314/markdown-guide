@@ -454,7 +454,7 @@ Table: Pipe Table
 - [x] Done.
 - [ ] Not done.
 
-# Software
+# Compiling
 
 I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://github.com/jgm/pandoc).
 
@@ -467,7 +467,7 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 - Can `Export` directly.
 - Can use `Distraction Free Mode` with no HUD and no HTML preview.
 
-## pandoc
+## Pandoc
 
 - To HTML example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.html -s --mathjax`.
 - To PDF example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.pdf --pdf-engine=pdflatex`.
