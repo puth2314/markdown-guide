@@ -8,11 +8,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run script for html
-        run: bash convert-to.sh html
+        run: bash scripts/convert-to.sh html
         shell: bash
   convert-to-pdf:
     runs-on: windows-latest
     steps:
       - name: Run script for pdf
-        run: bash convert-to.sh pdf
+        run: bash scripts/convert-to.sh pdf
         shell: bash
