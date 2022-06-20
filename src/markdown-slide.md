@@ -685,7 +685,7 @@ Term
 
 # Compiling
 
-I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://github.com/jgm/pandoc).
+I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [Pandoc](https://github.com/jgm/pandoc).
 
 ## ghostwriter
 

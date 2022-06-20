@@ -11,7 +11,7 @@ I tend to forget some specific markdown syntax; by which this guide provides a n
 
 What you are reading now is a subset of the actual guide because this `README.md` is compiled using GitHub-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html) instead.
 
-The built [LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf), the [HTML slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html), and [Beamer slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf) are also in the repository.
+The built [LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf), the [HTML slides](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html), and [Beamer slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf) are also in the repository.
 
 # What is markdown?
 
@@ -437,7 +437,7 @@ Table: Pipe Table
 
 # Compiling
 
-I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pandoc](https://github.com/jgm/pandoc).
+I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [Pandoc](https://github.com/jgm/pandoc).
 
 ## ghostwriter
 
