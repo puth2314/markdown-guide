@@ -1,6 +1,6 @@
 [![html-current](https://img.shields.io/badge/html-current-brightgreen.svg?style=flat)](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html)
 [![pdf-current](https://img.shields.io/badge/pdf-current-brightgreen.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf)
-[![html-slide-deprecated](https://img.shields.io/badge/hslide-current-brightgreen.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html)
+[![html-slide-deprecated](https://img.shields.io/badge/hslide-current-brightgreen.svg?style=flat)](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html)
 [![pdf-slide-deprecated](https://img.shields.io/badge/pslide-current-brightgreen.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf)
 
 # Introduction
