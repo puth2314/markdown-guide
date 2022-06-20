@@ -1,6 +1,7 @@
 [![html-current](https://img.shields.io/badge/html-current-brightgreen.svg?style=flat)](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html)
 [![pdf-current](https://img.shields.io/badge/pdf-current-brightgreen.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf)
-[![slide-deprecated](https://img.shields.io/badge/slide-deprecated-orange.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf)
+[![html-slide-deprecated](https://img.shields.io/badge/hslide-current-brightgreen.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html)
+[![pdf-slide-deprecated](https://img.shields.io/badge/pslide-current-brightgreen.svg?style=flat)](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf)
 
 # Introduction
 
@@ -8,9 +9,9 @@ Welcome to a markdown guide. The aim to provide the general quirks of markdown; 
 
 I tend to forget some specific markdown syntax; by which this guide provides a nice reference for. Also, writing this markdown guide in markdown is just wonderful.
 
-This is a subset of the actual guide because this `README.md` is compiled using GitHub-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html) instead.
+What you are reading now is a subset of the actual guide because this `README.md` is compiled using GitHub-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html) instead.
 
-The ![LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf) and ![Beamer slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf) are also in the repository; although direct compilation of a single markdown file into multiple formats often yield awkward formatting to at least one format (because that markdown file is not particularly written for said format).
+The built [LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf), the [HTML slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html), and [Beamer slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf) are also in the repository.
 
 # What is markdown?
 
