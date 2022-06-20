@@ -91,7 +91,8 @@ Paragraphs are separated by a blank line.
 Two spaces at the end of a line  
 produce a line break.
 
-Text attributes: _italic_, *also italic*, **bold**, __also bold__, `mono-space`, ~~strike-through~~.
+Text attributes: _italic_, *also italic*, **bold**, __also bold__, 
+`mono-space`, ~~strike-through~~.
 ```
 
 ## Formatted
@@ -101,7 +102,8 @@ Paragraphs are separated by a blank line.
 Two spaces at the end of a line  
 produce a line break.
 
-Text attributes: _italic_, *also italic*, **bold**, __also bold__, `mono-space`, ~~strike-through~~.
+Text attributes: _italic_, *also italic*, **bold**, __also bold__, 
+`mono-space`, ~~strike-through~~.
 
 # Lists
 
@@ -180,7 +182,8 @@ Ordered list:
 ## Raw
 
 ```
-A [Wikipedia](https://www.wikipedia.org "Wikipedia Home") and [Google][identifier] hyper-link.
+A [Wikipedia](https://www.wikipedia.org "Wikipedia Home") 
+and [Google][identifier] hyper-link.
 
 A <https://directlink.tv> and <directlink@email.org>.
 
@@ -189,7 +192,8 @@ A <https://directlink.tv> and <directlink@email.org>.
 
 ## Formatted
 
-A [Wikipedia](https://www.wikipedia.org "Wikipedia Home") and [Google][identifier] hyper-link.
+A [Wikipedia](https://www.wikipedia.org "Wikipedia Home") 
+and [Google][identifier] hyper-link.
 
 A <https://directlink.tv> and <directlink@email.org>.
 
@@ -237,12 +241,12 @@ Text within the quotes after the image directory is the text displayed when the 
 ## Raw
 
 ```
-![Markdown Icon](../images/markdown-icon.png  "Markdown Icon")
+![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){ height=100% }
 ```
 
 ## Formatted
 
-![Markdown Icon](../images/markdown-icon.png  "Markdown Icon")
+![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){ height=100% }
 
 # Block-quotes
 
@@ -367,7 +371,8 @@ Comment
 ## Raw
 
 ```
-Text[^footnote-identifier] with a footnote[^long-footnote] and inline^[You do not have to create an identifier.].
+Text[^footnote-identifier] with a footnote[^long-footnote] 
+and inline^[You do not have to create an identifier.].
 
 [^footnote-identifier]: Footnote information.
 
@@ -380,7 +385,8 @@ Text[^footnote-identifier] with a footnote[^long-footnote] and inline^[You do no
 
 ## Formatted
 
-Text[^footnote-identifier] with a footnote[^long-footnote] and inline^[You do not have to create an identifier.].
+Text[^footnote-identifier] with a footnote[^long-footnote] 
+and inline^[You do not have to create an identifier.].
 
 [^footnote-identifier]: Footnote information.
 
