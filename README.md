@@ -222,12 +222,12 @@ Text within the quotes after the image directory is the text displayed when the 
 ## Raw
 
 ```
-![Markdown Icon](images/markdown-icon.png  "Markdown Icon"){ height=100% }
+![Markdown Icon](images/markdown-icon.png  "Markdown Icon")
 ```
 
 ## Formatted
 
-![Markdown Icon](images/markdown-icon.png  "Markdown Icon"){ height=100% }
+![Markdown Icon](images/markdown-icon.png  "Markdown Icon")
 
 # Block-quotes
 
