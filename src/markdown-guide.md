@@ -696,9 +696,31 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 - Make modifications to `latex-template.tex` from `pandoc -D latex >> latex-template.tex`, and then use `--template=latex-template.tex`.
 - Can concatenate multiple input files.
 
+# Adding References
+
+1. Add a `.bib` file into a directory, and optionally a `.csl` file.
+	- [Here](http://www.bibtex.org/Format/) is a link in formating the `.bib` file.
+	- [Here](https://www.zotero.org/styles) is a link for `.csl` files for citation standards.
+2. Within your markdown document, append `@` with the unique citation-key declared in the `.bib` file, to add references. 
+3. Add the `-C` or `--cite-proc` argument when compiling, to process the citations.
+4. Add the `--bibliography=<file-name>.bib` argument to specify the path to the file (replace `<file-name>`).
+5. Optionally add the `--csl=<file-name>.csl` argument to specify a certain citation style.
+
+## Raw
+
+```
+This is a self reference. [@self]
+```
+
+## Formatted
+
+This is a self reference. [@self]
+
 # Explore
 
 - Labels
 - Images
 - [Citations](https://pandoc.org/MANUAL.html#citations)
 - Citation Syntax
+
+# References

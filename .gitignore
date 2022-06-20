@@ -3,3 +3,7 @@
 
 # backup files from `ghostwriter`
 *.md.backup
+
+# relating to references/bibliography
+*.bib
+*.csl
