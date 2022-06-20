@@ -24,7 +24,7 @@ toc: true
 
 # Introduction
 
-Welcome to my (arguably scuffed) markdown guide. The aim to provide the general quirks of markdown; intended to be revisited as often as needed.
+Welcome to a markdown guide. The aim to provide the general quirks of markdown; intended to be revisited as often as needed.
 
 I tend to forget some specific markdown syntax; by which this guide provides a nice reference for. Also, writing this markdown guide in markdown is just wonderful. 
 
@@ -36,7 +36,7 @@ Markdown is a markup language with plain text formatting syntax (basically bette
 
 - Markdown is incredibly lightweight compared to rich text formats; such as `.rtf` or `.docx`.
 - It is arguably the simplest markup language there is.
-- Can be converted to a plethora of formats seamlessly, such as `.html`, `.pdf`, `.docx`, etc. (which implies that `.md` files are essentially future-proof).
+- Can be converted to a plethora of formats seamlessly; such as `.html`, `.pdf`, `.docx`, etc. (which implies that `.md` files are essentially future-proof).
 
 # Where is markdown used?
 
