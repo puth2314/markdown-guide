@@ -698,7 +698,7 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 
 # Adding References
 
-1. Add a `.bib` file into a directory, and optionally a `.csl` file.
+1. Add a `.bib` file into a directory, and optionally a `.xcsl` file.
 	- [Here](http://www.bibtex.org/Format/) is a link in formating the `.bib` file.
 	- [Here](https://www.zotero.org/styles) is a link for `.csl` files for citation standards.
 2. Within your markdown document, append `@` with the unique citation-key declared in the `.bib` file, to add references. 
