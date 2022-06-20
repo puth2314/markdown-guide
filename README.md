@@ -9,9 +9,9 @@ Welcome to a markdown guide. The aim to provide the general quirks of markdown; 
 
 I tend to forget some specific markdown syntax; by which this guide provides a nice reference for. Also, writing this markdown guide in markdown is just wonderful.
 
-What you are reading now is a subset of the actual guide because this `README.md` is compiled using GitHub-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html) instead. Note: Github's HTML viewer is static so the [`Slidy`](https://www.w3.org/wiki/Slidy_Help) slides won't be as interesting.
+What you are reading now is a subset of the actual guide because this `README.md` is compiled using GitHub-flavored markdown. You might want to view the [HTML file](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.html) instead. 
 
-The built [LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf), the [HTML slides](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html), and [Beamer slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf) are also in the repository.
+The built [LaTeX .pdf](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-guide.pdf), the [Slidy slides](https://htmlpreview.github.io/?https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.html), and [Beamer slides](https://github.com/puth2314/markdown-guide/blob/master/build/markdown-slide.pdf) are also in the repository. Note: Github's HTML viewer is static so the [`Slidy`](https://www.w3.org/wiki/Slidy_Help) slides won't be as interesting.
 
 # What is markdown?
 
