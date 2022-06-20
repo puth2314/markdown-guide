@@ -111,16 +111,16 @@
 Puthearath Aim
   </p>
 </div>
-<div id="introduction" class="slide section level1">
+<div id="introduction" class="slide section level2">
 <h1>Introduction</h1>
 <p>Welcome to a markdown guide. The aim to provide the general quirks of markdown; intended to be revisited as often as needed. The following syntax is specific for converting to slides.</p>
 <p>I tend to forget some specific markdown syntax; by which this guide provides a nice reference for. Also, writing this markdown guide in markdown is just wonderful.</p>
 </div>
-<div id="what-is-markdown" class="slide section level1">
+<div id="what-is-markdown" class="slide section level2">
 <h1>What is markdown?</h1>
 <p>Markdown is a markup language with plain text formatting syntax (basically better text). It converts plain text to HTML.</p>
 </div>
-<div id="why-use-markdown" class="slide section level1">
+<div id="why-use-markdown" class="slide section level2">
 <h1>Why use markdown?</h1>
 <ul>
 <li>Markdown is incredibly lightweight compared to rich text formats; such as <code>.rtf</code> or <code>.docx</code>.</li>
@@ -128,7 +128,7 @@ Puthearath Aim
 <li>Can be converted to a plethora of formats seamlessly; such as <code>.html</code>, <code>.pdf</code>, <code>.docx</code>, etc. (which implies that <code>.md</code> files are essentially future-proof).</li>
 </ul>
 </div>
-<div id="where-is-markdown-used" class="slide section level1">
+<div id="where-is-markdown-used" class="slide section level2">
 <h1>Where is markdown used?</h1>
 <ul>
 <li>Repositories such as <a href="https://github.com/">GitHub</a> (<code>README.md</code> files) for software documentation.</li>
@@ -139,34 +139,56 @@ Puthearath Aim
 <li>This markdown guide.</li>
 </ul>
 </div>
-<div id="headings-and-sub-headings" class="slide section level1">
+<div id="headings-and-sub-headings" class="title-slide slide section level1">
 <h1>Headings and Sub-headings</h1>
+
+</div>
+<div id="note" class="slide section level2">
+<h1>Note</h1>
 <p>Prepending a <code>#</code> before some text promotes it to a heading. Prepending an additional <code>#</code> demotes it to a sub-heading.</p>
-<p>Sub-sub-headings and so on always promote to a sub-heading (when converting to slides).</p>
+<p>Sub-sub-sub-headings and so on always promote to a sub-sub-heading (when converting to slides).</p>
 <p>Adding one (or multiple) <code>=</code> below the text also promotes it to a heading. Use <code>-</code> for a sub-heading.</p>
-<h2 id="raw">Raw</h2>
+</div>
+<div id="raw" class="slide section level2">
+<h1>Raw</h1>
 <pre><code># Heading
 ## Sub-heading
 ### Sub-sub-heading
+#### Sub-sub-heading
 
 Also Heading
 ===
 Also sub-heading
 ---</code></pre>
-<h2 id="formatted">Formatted</h2>
 </div>
-<div id="heading" class="slide section level1">
+<div id="formatted" class="slide section level2">
+<h1>Formatted</h1>
+</div>
+
+<div id="heading" class="title-slide slide section level1">
 <h1>Heading</h1>
-<h2 id="sub-heading">Sub-heading</h2>
+
+</div>
+<div id="sub-heading" class="slide section level2">
+<h1>Sub-heading</h1>
 <h3 id="sub-sub-heading">Sub-sub-heading</h3>
+<h4 id="sub-sub-sub-heading">Sub-sub-sub-heading</h4>
 </div>
-<div id="also-heading" class="slide section level1">
+
+<div id="also-heading" class="title-slide slide section level1">
 <h1>Also Heading</h1>
-<h2 id="also-sub-heading">Also sub-heading</h2>
+
 </div>
-<div id="generic-formatting" class="slide section level1">
+<div id="also-sub-heading" class="slide section level2">
+<h1>Also sub-heading</h1>
+</div>
+
+<div id="generic-formatting" class="title-slide slide section level1">
 <h1>Generic Formatting</h1>
-<h2 id="raw-1">Raw</h2>
+
+</div>
+<div id="raw-1" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>Paragraphs are separated by a blank line.
 
 Two spaces at the end of a line  
@@ -174,16 +196,25 @@ produce a line break.
 
 Text attributes: _italic_, *also italic*, **bold**, __also bold__, 
 `mono-space`, ~~strike-through~~.</code></pre>
-<h2 id="formatted-1">Formatted</h2>
+</div>
+<div id="formatted-1" class="slide section level2">
+<h1>Formatted</h1>
 <p>Paragraphs are separated by a blank line.</p>
 <p>Two spaces at the end of a line<br />
 produce a line break.</p>
 <p>Text attributes: <em>italic</em>, <em>also italic</em>, <strong>bold</strong>, <strong>also bold</strong>, <code>mono-space</code>, <del>strike-through</del>.</p>
 </div>
-<div id="unordered-lists" class="slide section level1">
+
+<div id="unordered-lists" class="title-slide slide section level1">
 <h1>Unordered Lists</h1>
+
+</div>
+<div id="note-1" class="slide section level2">
+<h1>Note</h1>
 <p>A blank line between list elements (sometimes) produces a larger space between the elements.</p>
-<h2 id="raw-2">Raw</h2>
+</div>
+<div id="raw-2" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>* Fruits
     - Apples
     
@@ -196,8 +227,8 @@ produce a line break.</p>
 
     Subsequent indented paragraphs belong to the list element.</code></pre>
 </div>
-<div id="unordered-lists-1" class="slide section level1">
-<h1>Unordered Lists</h1>
+<div id="raw-3" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>* Dairy
     
     ```
@@ -206,9 +237,8 @@ produce a line break.</p>
 
 - Vegetables</code></pre>
 </div>
-<div id="unordered-lists-2" class="slide section level1">
-<h1>Unordered Lists</h1>
-<h2 id="formatted-2">Formatted</h2>
+<div id="formatted-2" class="slide section level2">
+<h1>Formatted</h1>
 <ul>
 <li><p>Fruits</p>
 <ul>
@@ -226,15 +256,21 @@ produce a line break.</p>
 <li><p>Vegetables</p></li>
 </ul>
 </div>
-<div id="ordered-lists" class="slide section level1">
+
+<div id="ordered-lists" class="title-slide slide section level1">
 <h1>Ordered Lists</h1>
-<h2 id="raw-3">Raw</h2>
+
+</div>
+<div id="raw-4" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>1. Uno
 2) Dos
 3) Tres
 
 4. Cuatro</code></pre>
-<h2 id="formatted-3">Formatted</h2>
+</div>
+<div id="formatted-3" class="slide section level2">
+<h1>Formatted</h1>
 <ol style="list-style-type: decimal">
 <li>Uno</li>
 </ol>
@@ -246,34 +282,56 @@ produce a line break.</p>
 <li>Cuatro</li>
 </ol>
 </div>
-<div id="links" class="slide section level1">
+
+<div id="links" class="title-slide slide section level1">
 <h1>Links</h1>
-<h2 id="raw-4">Raw</h2>
+
+</div>
+<div id="raw-5" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>A [Wikipedia](https://www.wikipedia.org &quot;Wikipedia Home&quot;)
 and [Google][identifier] hyper-link.
 
 A &lt;https://directlink.tv&gt; and &lt;directlink@email.org&gt;.
 
 [identifier]: https://www.google.com &quot;Google Home&quot;</code></pre>
-<h2 id="formatted-4">Formatted</h2>
+</div>
+<div id="formatted-4" class="slide section level2">
+<h1>Formatted</h1>
 <p>A <a href="https://www.wikipedia.org" title="Wikipedia Home">Wikipedia</a> and <a href="https://www.google.com" title="Google Home">Google</a> hyper-link.</p>
 <p>A <a href="https://directlink.tv" class="uri">https://directlink.tv</a> and <a href="mailto:directlink@email.org" class="email">directlink@email.org</a>.</p>
 </div>
-<div id="images" class="slide section level1">
+
+<div id="images" class="title-slide slide section level1">
 <h1>Images</h1>
+
+</div>
+<div id="note-2" class="slide section level2">
+<h1>Note</h1>
 <p>Text within the quotes after the image directory is the text displayed when the image directory is not found.</p>
-<h2 id="raw-5">Raw</h2>
+</div>
+<div id="raw-6" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>![Markdown Icon](../images/markdown-icon.png  &quot;Markdown Icon&quot;){ height=50% }</code></pre>
-<h2 id="formatted-5">Formatted</h2>
+</div>
+<div id="formatted-5" class="slide section level2">
+<h1>Formatted</h1>
 <div class="figure">
 <img src="../images/markdown-icon.png" title="Markdown Icon" style="height:50.0%" alt="" />
 <p class="caption">Markdown Icon</p>
 </div>
 </div>
-<div id="block-quotes" class="slide section level1">
+
+<div id="block-quotes" class="title-slide slide section level1">
 <h1>Block-quotes</h1>
+
+</div>
+<div id="note-3" class="slide section level2">
+<h1>Note</h1>
 <p>Prepend a <code>&gt;</code> in every line of the block for a block-quote. You can only have one level of block-quote.</p>
-<h2 id="raw-6">Raw</h2>
+</div>
+<div id="raw-7" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>&gt; Append two space in first line  
 &gt; for a line-break in block-quote.
 &gt;
@@ -281,7 +339,9 @@ A &lt;https://directlink.tv&gt; and &lt;directlink@email.org&gt;.
 &gt;
 &gt;&gt; Deeper block-quote with additional `&gt;`.
 &gt;&gt;</code></pre>
-<h2 id="formatted-6">Formatted</h2>
+</div>
+<div id="formatted-6" class="slide section level2">
+<h1>Formatted</h1>
 <blockquote>
 <p>Append two space in first line<br />
 for a line-break in blockquote.</p>
@@ -291,12 +351,19 @@ for a line-break in blockquote.</p>
 </blockquote>
 </blockquote>
 </div>
-<div id="code-blocks" class="slide section level1">
+
+<div id="code-blocks" class="title-slide slide section level1">
 <h1>Code-blocks</h1>
+
+</div>
+<div id="note-4" class="slide section level2">
+<h1>Note</h1>
 <p>Surround the block with three <code>`</code>’s or three <code>~</code>’s (above and below the block).</p>
 <p>Optionally append the first line with the name of the defined language for syntax highlighting.</p>
 <p>A code-block can also be formed with a prepended tab (four spaces) in each line.</p>
-<h2 id="raw-7">Raw</h2>
+</div>
+<div id="raw-8" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>```Python
 # A code-block
 import numpy as np
@@ -308,8 +375,8 @@ if __name__ == &#39;__main__&#39;:
     pass
 ```</code></pre>
 </div>
-<div id="code-blocks-1" class="slide section level1">
-<h1>Code-blocks</h1>
+<div id="raw-9" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>~~~C++
 // Another code-block
 for(int i=0;i++;i&lt;42){
@@ -319,9 +386,8 @@ for(int i=0;i++;i&lt;42){
 <pre><code>    free(malloc(69))
     malloc(free(42))</code></pre>
 </div>
-<div id="code-blocks-2" class="slide section level1">
-<h1>Code-blocks</h1>
-<h2 id="formatted-7">Formatted</h2>
+<div id="formatted-7" class="slide section level2">
+<h1>Formatted</h1>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A code-block</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> func(x):</span>
@@ -337,9 +403,13 @@ for(int i=0;i++;i&lt;42){
 <pre><code>free(malloc(69))
 malloc(free(42))</code></pre>
 </div>
-<div id="comments" class="slide section level1">
+
+<div id="comments" class="title-slide slide section level1">
 <h1>Comments</h1>
-<h2 id="raw-8">Raw</h2>
+
+</div>
+<div id="raw-10" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>&lt;Comment&gt;
 
 &lt;!--
@@ -349,33 +419,57 @@ Comment
 [//]: # (This is the most platform independent syntax.)
 
 [///]: # (This will not be included in the output file.)</code></pre>
-<h2 id="formatted-8">Formatted</h2>
+</div>
+<div id="formatted-8" class="slide section level2">
+<h1>Formatted</h1>
 <p><Comment></p>
 <!--
 Comment
 -->
 </div>
-<div id="footnotes" class="slide section level1">
+
+<div id="footnotes" class="title-slide slide section level1">
 <h1>Footnotes</h1>
-<h2 id="raw-9">Raw</h2>
-<pre><code>Text[^footnote-identifier] with a footnote[^long-footnote] and inline^[You do not have to create an identifier.].
+
+</div>
+<div id="raw-11" class="slide section level2">
+<h1>Raw</h1>
+<pre><code>Text[^footnote-identifier] with a footnote and inline^[You do not have to create an identifier.].
 
 [^footnote-identifier]: Footnote information.</code></pre>
-<h2 id="formatted-9">Formatted</h2>
+</div>
+<div id="formatted-9" class="slide section level2">
+<h1>Formatted</h1>
 <p>Text<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> with a footnote and inline<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>.</p>
 </div>
-<div id="latex" class="slide section level1">
+
+<div id="latex" class="title-slide slide section level1">
 <h1>LaTeX</h1>
+
+</div>
+<div id="note-5" class="slide section level2">
+<h1>Note</h1>
 <p>Surround LaTeX code with double <code>$</code>.</p>
-<h2 id="raw-10">Raw</h2>
+</div>
+<div id="raw-12" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>$$\frac{some}{69}\cdot\frac{420}{LaTeX}$$</code></pre>
-<h2 id="formatted-10">Formatted</h2>
+</div>
+<div id="formatted-10" class="slide section level2">
+<h1>Formatted</h1>
 <p><span class="math display">\[\frac{some}{69}\cdot\frac{420}{LaTeX}\]</span></p>
 </div>
-<div id="tables" class="slide section level1">
+
+<div id="tables" class="title-slide slide section level1">
 <h1>Tables</h1>
+
+</div>
+<div id="note-6" class="slide section level2">
+<h1>Note</h1>
 <p>Generally and unfortunately, for some table styles, you cannot directly set the column width; unless you perform some wonky stuff with its behaviour.</p>
-<h2 id="raw-11">Raw</h2>
+</div>
+<div id="raw-13" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>|Left|Centre|Right|
 |:--|:-:|--:|
 |1,1|1,2|1,3|
@@ -385,9 +479,8 @@ Comment
 
 Table: Pipe Table</code></pre>
 </div>
-<div id="tables-1" class="slide section level1">
-<h1>Tables</h1>
-<h2 id="formatted-11">Formatted</h2>
+<div id="formatted-11" class="slide section level2">
+<h1>Formatted</h1>
 <table>
 <caption>Pipe Table</caption>
 <thead>
@@ -421,12 +514,18 @@ Table: Pipe Table</code></pre>
 </tbody>
 </table>
 </div>
-<div id="pandoc-tables" class="slide section level1">
+
+<div id="pandoc-tables" class="title-slide slide section level1">
 <h1>Pandoc Tables</h1>
+
 </div>
-<div id="simple-table" class="slide section level1">
+
+<div id="simple-table" class="title-slide slide section level1">
 <h1>Simple Table</h1>
-<h2 id="raw-12">Raw</h2>
+
+</div>
+<div id="raw-14" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>Left   Centre   Right
 ----- -------- ------
 1,1     1,2       1,3
@@ -436,9 +535,8 @@ Table: Pipe Table</code></pre>
 
 : Simple Table</code></pre>
 </div>
-<div id="simple-table-1" class="slide section level1">
-<h1>Simple Table</h1>
-<h2 id="formatted-12">Formatted</h2>
+<div id="formatted-12" class="slide section level2">
+<h1>Formatted</h1>
 <table>
 <caption>Simple Table</caption>
 <thead>
@@ -472,9 +570,13 @@ Table: Pipe Table</code></pre>
 </tbody>
 </table>
 </div>
-<div id="header-less-simple-table" class="slide section level1">
+
+<div id="header-less-simple-table" class="title-slide slide section level1">
 <h1>Header-less Simple Table</h1>
-<h2 id="raw-13">Raw</h2>
+
+</div>
+<div id="raw-15" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>----- ------ -----
 1,1    1,2     1,3
 2,1    2,2     2,3
@@ -484,9 +586,8 @@ Table: Pipe Table</code></pre>
 
 : Header-less Simple Table</code></pre>
 </div>
-<div id="header-less-simple-table-1" class="slide section level1">
-<h1>Header-less Simple Table</h1>
-<h2 id="formatted-13">Formatted</h2>
+<div id="formatted-13" class="slide section level2">
+<h1>Formatted</h1>
 <table>
 <caption>Header-less Simple Table</caption>
 <tbody>
@@ -513,9 +614,13 @@ Table: Pipe Table</code></pre>
 </tbody>
 </table>
 </div>
-<div id="multi-line-table" class="slide section level1">
+
+<div id="multi-line-table" class="title-slide slide section level1">
 <h1>Multi-line Table</h1>
-<h2 id="raw-14">Raw</h2>
+
+</div>
+<div id="raw-16" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>-------------------------------------------------
 Left               Centre                   Right
 Aligned            Aligned                Aligned
@@ -530,9 +635,8 @@ spans two lines
 
 : Multi-line Table</code></pre>
 </div>
-<div id="multi-line-table-1" class="slide section level1">
-<h1>Multi-line Table</h1>
-<h2 id="formatted-14">Formatted</h2>
+<div id="formatted-14" class="slide section level2">
+<h1>Formatted</h1>
 <table style="width:69%;">
 <caption>Multi-line Table</caption>
 <colgroup>
@@ -561,9 +665,13 @@ spans two lines
 </tbody>
 </table>
 </div>
-<div id="grid-table" class="slide section level1">
+
+<div id="grid-table" class="title-slide slide section level1">
 <h1>Grid Table</h1>
-<h2 id="raw-15">Raw</h2>
+
+</div>
+<div id="raw-17" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>: Grid Table
 
 +-----------+-----------+
@@ -576,9 +684,8 @@ spans two lines
 |- 1.67,1   |           |
 +-----------+-----------+</code></pre>
 </div>
-<div id="grid-table-1" class="slide section level1">
-<h1>Grid Table</h1>
-<h2 id="formatted-15">Formatted</h2>
+<div id="formatted-15" class="slide section level2">
+<h1>Formatted</h1>
 <table style="width:33%;">
 <caption>Grid Table</caption>
 <colgroup>
@@ -609,9 +716,13 @@ spans two lines
 </tbody>
 </table>
 </div>
-<div id="piped-grid-table" class="slide section level1">
+
+<div id="piped-grid-table" class="title-slide slide section level1">
 <h1>Piped Grid Table</h1>
-<h2 id="raw-16">Raw</h2>
+
+</div>
+<div id="raw-18" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>: Piped Grid Table
 
 +----+------+-----+
@@ -626,9 +737,8 @@ spans two lines
 |4,1 | 4,2  |  4,3|
 +----+------+-----+</code></pre>
 </div>
-<div id="piped-grid-table-1" class="slide section level1">
-<h1>Piped Grid Table</h1>
-<h2 id="formatted-16">Formatted</h2>
+<div id="formatted-16" class="slide section level2">
+<h1>Formatted</h1>
 <table style="width:26%;">
 <caption>Piped Grid Table</caption>
 <colgroup>
@@ -667,9 +777,13 @@ spans two lines
 </tbody>
 </table>
 </div>
-<div id="header-less-grid-table" class="slide section level1">
+
+<div id="header-less-grid-table" class="title-slide slide section level1">
 <h1>Header-less Grid Table</h1>
-<h2 id="raw-17">Raw</h2>
+
+</div>
+<div id="raw-19" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>: Header-less Grid Table
 
 +:---+:----:+----:+
@@ -682,9 +796,8 @@ spans two lines
 |4,1 | 4,2  |  4,3|
 +----+------+-----+</code></pre>
 </div>
-<div id="header-less-grid-table-1" class="slide section level1">
-<h1>Header-less Grid Table</h1>
-<h2 id="formatted-17">Formatted</h2>
+<div id="formatted-17" class="slide section level2">
+<h1>Formatted</h1>
 <table style="width:26%;">
 <caption>Header-less Grid Table</caption>
 <colgroup>
@@ -716,11 +829,18 @@ spans two lines
 </tbody>
 </table>
 </div>
-<div id="line-block" class="slide section level1">
+
+<div id="line-block" class="title-slide slide section level1">
 <h1>Line-block</h1>
+
+</div>
+<div id="note-7" class="slide section level2">
+<h1>Note</h1>
 <p>Prepend a <code>|</code> in each line of the line-block.</p>
 <p>This allows new lines without an empty line between each line, which is useful for verses and addresses.</p>
-<h2 id="raw-18">Raw</h2>
+</div>
+<div id="raw-20" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>| An iconic lullaby:
 |    Twinkle twinkle little star,
 |    how I wonder what you are.
@@ -729,9 +849,8 @@ spans two lines
 |    Twinkle twinkle little star,
 |    how I wonder what you are.</code></pre>
 </div>
-<div id="line-block-1" class="slide section level1">
-<h1>Line-block</h1>
-<h2 id="formatted-18">Formatted</h2>
+<div id="formatted-18" class="slide section level2">
+<h1>Formatted</h1>
 <div class="line-block">An iconic lullaby:<br />
    Twinkle twinkle little star,<br />
    how I wonder what you are.<br />
@@ -740,12 +859,18 @@ spans two lines
    Twinkle twinkle little star,<br />
    how I wonder what you are.</div>
 </div>
-<div id="task-list" class="slide section level1">
+
+<div id="task-list" class="title-slide slide section level1">
 <h1>Task-list</h1>
-<h2 id="raw-19">Raw</h2>
+
+</div>
+<div id="raw-21" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>- [x] Done.
 - [ ] Not done.</code></pre>
-<h2 id="formatted-19">Formatted</h2>
+</div>
+<div id="formatted-19" class="slide section level2">
+<h1>Formatted</h1>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" checked="" />
 Done.</li>
@@ -753,25 +878,40 @@ Done.</li>
 Not done.</li>
 </ul>
 </div>
-<div id="superscripts-and-subscripts" class="slide section level1">
+
+<div id="superscripts-and-subscripts" class="title-slide slide section level1">
 <h1>Superscripts and Subscripts</h1>
+
+</div>
+<div id="note-8" class="slide section level2">
+<h1>Note</h1>
 <p>Surround literals between<code>~</code> for a subscript. Very useful in <a href="https://en.wikipedia.org/wiki/Chemical_formula">chemical formulae</a>.</p>
 <p>Conversely, surround literals between <code>^</code> for a superscript.</p>
-<h2 id="raw-20">Raw</h2>
+</div>
+<div id="raw-22" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>H~2~O is one of the main reasons to why life exists.
 
 f(x) = Ae^-bx^ describes exponential decay.</code></pre>
-<h2 id="formatted-20">Formatted</h2>
+</div>
+<div id="formatted-20" class="slide section level2">
+<h1>Formatted</h1>
 <p>H<sub>2</sub>O is one of the main reasons to why life exists.</p>
 <p>f(x) = Ae<sup>-bx</sup> describes exponential decay.</p>
 </div>
-<div id="definition-list" class="slide section level1">
+
+<div id="definition-list" class="title-slide slide section level1">
 <h1>Definition List</h1>
-<h2 id="raw-21">Raw</h2>
+
+</div>
+<div id="raw-23" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>Term
 : This is a definition.
 : This is an alternate definition.</code></pre>
-<h2 id="formatted-21">Formatted</h2>
+</div>
+<div id="formatted-21" class="slide section level2">
+<h1>Formatted</h1>
 <dl>
 <dt>Term</dt>
 <dd>This is a definition.
@@ -780,10 +920,18 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 </dd>
 </dl>
 </div>
-<div id="compiling" class="slide section level1">
+
+<div id="compiling" class="title-slide slide section level1">
 <h1>Compiling</h1>
+
+</div>
+<div id="note-9" class="slide section level2">
+<h1>Note</h1>
 <p>I mainly use <a href="https://github.com/wereturtle/ghostwriter">ghostwriter</a> and <a href="https://github.com/jgm/pandoc">Pandoc</a>.</p>
-<h2 id="ghostwriter">ghostwriter</h2>
+<p>Most text-editors should have support for markdown. Most IDE’s should have plugins to view formatted markdown in real-time.</p>
+</div>
+<div id="ghostwriter" class="slide section level2">
+<h1>ghostwriter</h1>
 <ul>
 <li>Can choose <code>Markdown Flavor</code> and <code>Style Sheet</code> for HTML preview.</li>
 <li>Can see <code>Outline HUD</code> and <code>Documents Statistics HUD</code>; and can use <code>ctrl + shift + h</code> to remove or show them.</li>
@@ -793,9 +941,8 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li>Can use <code>Distraction Free Mode</code> with no HUD and no HTML preview.</li>
 </ul>
 </div>
-<div id="compiling-1" class="slide section level1">
-<h1>Compiling</h1>
-<h2 id="pandoc">Pandoc</h2>
+<div id="pandoc" class="slide section level2">
+<h1>Pandoc</h1>
 <ul>
 <li>To HTML example snippet: <code>pandoc markdown-guide.md -o markdown-guide.html -s --mathjax</code>.</li>
 <li>To PDF example snippet: <code>pandoc markdown-guide.md -o markdown-guide.pdf --pdf-engine=pdflatex</code>.</li>
@@ -807,8 +954,13 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li>Can concatenate multiple input files.</li>
 </ul>
 </div>
-<div id="adding-references" class="slide section level1">
+
+<div id="adding-references" class="title-slide slide section level1">
 <h1>Adding References</h1>
+
+</div>
+<div id="steps" class="slide section level2">
+<h1>Steps</h1>
 <ol style="list-style-type: decimal">
 <li>Add a <code>.bib</code> file into a directory, and optionally a <code>.csl</code> file.
 <ul>
@@ -820,12 +972,16 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li>Add the <code>--bibliography=&lt;file-name&gt;.bib</code> argument to specify the path to the file (replace <code>&lt;file-name&gt;</code>).</li>
 <li>Optionally add the <code>--csl=&lt;file-name&gt;.csl</code> argument to specify a certain citation style.</li>
 </ol>
-<h2 id="raw-22">Raw</h2>
+</div>
+<div id="raw-24" class="slide section level2">
+<h1>Raw</h1>
 <pre><code>This is a self reference. [@puth-mdg]</code></pre>
-<h2 id="formatted-22">Formatted</h2>
+</div>
+<div id="formatted-22" class="slide section level2">
+<h1>Formatted</h1>
 <p>This is a self reference. <span class="citation">[1]</span></p>
 </div>
-<div id="explore" class="slide section level1">
+<div id="explore" class="slide section level2">
 <h1>Explore</h1>
 <ul>
 <li>Labels</li>
@@ -834,7 +990,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li>Citation Syntax</li>
 </ul>
 </div>
-<div id="references" class="slide section level1 unnumbered">
+<div id="references" class="slide section level2 unnumbered">
 <h1 class="unnumbered">References</h1>
 <div id="refs" class="references csl-bib-body">
 <div id="ref-puth-mdg" class="csl-entry">
@@ -842,6 +998,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 </div>
 </div>
 </div>
+
 <div class="footnotes slide">
 <hr />
 <ol>

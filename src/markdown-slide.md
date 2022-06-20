@@ -17,7 +17,7 @@ theme: "metropolis" # "Luebeck"
 
 aspectratio: 169
 
-linkcolor: blue # red
+linkcolor: red # blue
 
 # linkstyle: bold
 
@@ -28,24 +28,24 @@ toc: false
 # logo: images/logo.png
 ...
 
-# Introduction
+## Introduction
 
 Welcome to a markdown guide. The aim to provide the general quirks of markdown; intended to be revisited as often as needed. 
 The following syntax is specific for converting to slides.
 
 I tend to forget some specific markdown syntax; by which this guide provides a nice reference for. Also, writing this markdown guide in markdown is just wonderful.
 
-# What is markdown?
+## What is markdown?
 
 Markdown is a markup language with plain text formatting syntax (basically better text). It converts plain text to HTML.
 
-# Why use markdown?
+## Why use markdown?
 
 - Markdown is incredibly lightweight compared to rich text formats; such as `.rtf` or `.docx`.
 - It is arguably the simplest markup language there is.
 - Can be converted to a plethora of formats seamlessly; such as `.html`, `.pdf`, `.docx`, etc. (which implies that `.md` files are essentially future-proof).
 
-# Where is markdown used?
+## Where is markdown used?
 
 - Repositories such as [GitHub](https://github.com/) (`README.md` files) for software documentation.
 - Forums and blog posts within applications or websites.
@@ -56,9 +56,11 @@ Markdown is a markup language with plain text formatting syntax (basically bette
 
 # Headings and Sub-headings
 
+## Note
+
 Prepending a `#` before some text promotes it to a heading. Prepending an additional `#` demotes it to a sub-heading.
 
-Sub-sub-headings and so on always promote to a sub-heading (when converting to slides).
+Sub-sub-sub-headings and so on always promote to a sub-sub-heading (when converting to slides).
 
 Adding one (or multiple) `=` below the text also promotes it to a heading. Use `-` for a sub-heading.
 
@@ -68,6 +70,7 @@ Adding one (or multiple) `=` below the text also promotes it to a heading. Use `
 # Heading
 ## Sub-heading
 ### Sub-sub-heading
+#### Sub-sub-heading
 
 Also Heading
 ===
@@ -80,6 +83,7 @@ Also sub-heading
 # Heading
 ## Sub-heading
 ### Sub-sub-heading
+#### Sub-sub-sub-heading
 
 Also Heading
 ===
@@ -112,6 +116,8 @@ Text attributes: _italic_, *also italic*, **bold**, __also bold__,
 
 # Unordered Lists
 
+## Note
+
 A blank line between list elements (sometimes) produces a larger space between the elements.
 
 ## Raw
@@ -130,9 +136,9 @@ A blank line between list elements (sometimes) produces a larger space between t
 	Subsequent indented paragraphs belong to the list element.
 ```
 
-# Unordered Lists
+## Raw
 
-```
+~~~
 * Dairy
 	
 	```
@@ -140,9 +146,7 @@ A blank line between list elements (sometimes) produces a larger space between t
 	```
 
 - Vegetables
-```
-
-# Unordered Lists
+~~~
 
 ## Formatted
 
@@ -211,6 +215,8 @@ A <https://directlink.tv> and <directlink@email.org>.
 
 # Images
 
+## Note
+
 Text within the quotes after the image directory is the text displayed when the image directory is not found.
 
 ## Raw
@@ -224,6 +230,8 @@ Text within the quotes after the image directory is the text displayed when the 
 ![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){ height=50% }
 
 # Block-quotes
+
+## Note
 
 Prepend a `>` in every line of the block for a block-quote. You can only have one level of block-quote.
 
@@ -251,6 +259,8 @@ Prepend a `>` in every line of the block for a block-quote. You can only have on
 
 # Code-blocks
 
+## Note
+
 Surround the block with three `` ` ``'s or three `~`'s (above and below the block).
 
 Optionally append the first line with the name of the defined language for syntax highlighting.
@@ -272,7 +282,7 @@ if __name__ == '__main__':
 ```
 ~~~
 
-# Code-blocks
+## Raw
 
 ```
 ~~~C++
@@ -287,8 +297,6 @@ for(int i=0;i++;i<42){
 	free(malloc(69))
 	malloc(free(42))
 ```
-
-# Code-blocks
 
 ## Formatted
 
@@ -346,7 +354,7 @@ Comment
 ## Raw
 
 ```
-Text[^footnote-identifier] with a footnote[^long-footnote] and inline^[You do not have to create an identifier.].
+Text[^footnote-identifier] with a footnote and inline^[You do not have to create an identifier.].
 
 [^footnote-identifier]: Footnote information.
 ```
@@ -358,6 +366,8 @@ Text[^footnote-identifier] with a footnote and inline^[You do not have to create
 [^footnote-identifier]: Footnote information.
 	
 # LaTeX
+
+## Note
 
 Surround LaTeX code with double `$`.
 
@@ -373,6 +383,8 @@ $$\frac{some}{69}\cdot\frac{420}{LaTeX}$$
 
 # Tables
 
+## Note
+
 Generally and unfortunately, for some table styles, you cannot directly set the column width; unless you perform some wonky stuff with its behaviour.
 
 ## Raw
@@ -387,8 +399,6 @@ Generally and unfortunately, for some table styles, you cannot directly set the 
 
 Table: Pipe Table
 ```
-
-# Tables
 
 ## Formatted
 
@@ -418,8 +428,6 @@ Left   Centre   Right
 : Simple Table
 ```
 
-# Simple Table
-
 ## Formatted
 
 Left   Centre   Right
@@ -446,8 +454,6 @@ Left   Centre   Right
 : Header-less Simple Table
 ```
 
-# Header-less Simple Table
-
 ## Formatted
 
 ----- ------ -----
@@ -479,8 +485,6 @@ spans two lines
 : Multi-line Table
 ```
 
-# Multi-line Table
-
 ## Formatted
 
 -------------------------------------------------
@@ -515,8 +519,6 @@ spans two lines
 +-----------+-----------+
 ```
 
-# Grid Table
-
 ## Formatted
 
 : Grid Table
@@ -551,8 +553,6 @@ spans two lines
 +----+------+-----+
 ```
 
-# Piped Grid Table
-
 ## Formatted
 
 : Piped Grid Table
@@ -587,8 +587,6 @@ spans two lines
 +----+------+-----+
 ```
 
-# Header-less Grid Table
-
 ## Formatted
 
 : Header-less Grid Table
@@ -605,6 +603,8 @@ spans two lines
 
 # Line-block
 
+## Note
+
 Prepend a `|` in each line of the line-block.
 
 This allows new lines without an empty line between each line, which is useful for verses and addresses.
@@ -620,8 +620,6 @@ This allows new lines without an empty line between each line, which is useful f
 | 	 Twinkle twinkle little star,
 |	 how I wonder what you are.
 ```
-
-# Line-block
 
 ## Formatted
 
@@ -648,6 +646,8 @@ This allows new lines without an empty line between each line, which is useful f
 - [ ] Not done.
 
 # Superscripts and Subscripts
+
+## Note
 
 Surround literals between`~` for a subscript. Very useful in [chemical formulae](https://en.wikipedia.org/wiki/Chemical_formula).
 
@@ -685,7 +685,11 @@ Term
 
 # Compiling
 
+## Note
+
 I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [Pandoc](https://github.com/jgm/pandoc).
+
+Most text-editors should have support for markdown. Most IDE's should have plugins to view formatted markdown in real-time.
 
 ## ghostwriter
 
@@ -695,8 +699,6 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [Pando
 - Can `Copy HTML` with `ctrl + shift + c`.
 - Can `Export` directly.
 - Can use `Distraction Free Mode` with no HUD and no HTML preview.
-
-# Compiling
 
 ## Pandoc
 
@@ -710,6 +712,8 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [Pando
 - Can concatenate multiple input files.
 
 # Adding References
+
+## Steps
 
 1. Add a `.bib` file into a directory, and optionally a `.csl` file.
 	- [Here](http://www.bibtex.org/Format/) is a link in formating the `.bib` file.
@@ -729,11 +733,11 @@ This is a self reference. [@puth-mdg]
 
 This is a self reference. [@puth-mdg]
 
-# Explore
+## Explore
 
 - Labels
 - Images
 - [Citations](https://pandoc.org/MANUAL.html#citations)
 - Citation Syntax
 
-# References
+## References
