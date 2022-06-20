@@ -682,6 +682,8 @@ Term
 
 I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [Pandoc](https://github.com/jgm/pandoc).
 
+Most text-editors should have support for markdown. Most IDE's should have plugins to view formatted markdown in real-time.
+
 ## ghostwriter
 
 - Can choose `Markdown Flavor` and `Style Sheet` for HTML preview.
