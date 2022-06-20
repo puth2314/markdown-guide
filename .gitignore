@@ -5,5 +5,4 @@
 *.md.backup
 
 # relating to references/bibliography
-*.bib
 *.csl

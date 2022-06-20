@@ -687,9 +687,9 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 
 ## Pandoc
 
-- To HTML example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.html -s --mathjax`.
-- To PDF example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.pdf --pdf-engine=pdflatex`.
-- To Beamer example snippet: `pandoc src/markdown-guide.md -o build/markdown-slide.pdf -t beamer -V theme:Luebeck`. Note: Beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.
+- To HTML example snippet: `pandoc markdown-guide.md -o markdown-guide.html -s --mathjax`.
+- To PDF example snippet: `pandoc markdown-guide.md -o markdown-guide.pdf --pdf-engine=pdflatex`.
+- To Beamer example snippet: `pandoc markdown-guide.md -o markdown-slide.pdf -t beamer -V theme:Luebeck`. Note: Beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.
 - `-s` means standalone and not a fragment; e.g. an HTML file with `head` and `body`.
 - `-f` and `-t` specifies input and output format respectively (markdown, latex, html), otherwise format is interpreted from file type.
 - `--toc` for table of contents; useful with `-c style.css`.
@@ -698,7 +698,7 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 
 # Adding References
 
-1. Add a `.bib` file into a directory, and optionally a `.xcsl` file.
+1. Add a `.bib` file into a directory, and optionally a `.csl` file.
 	- [Here](http://www.bibtex.org/Format/) is a link in formating the `.bib` file.
 	- [Here](https://www.zotero.org/styles) is a link for `.csl` files for citation standards.
 2. Within your markdown document, append `@` with the unique citation-key declared in the `.bib` file, to add references. 
@@ -709,12 +709,12 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 ## Raw
 
 ```
-This is a self reference. [@self]
+This is a self reference. [@puth-mdg]
 ```
 
 ## Formatted
 
-This is a self reference. [@self]
+This is a self reference. [@puth-mdg]
 
 # Explore
 

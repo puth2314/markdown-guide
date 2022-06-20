@@ -862,9 +862,9 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 </ul>
 <h2 id="pandoc">Pandoc</h2>
 <ul>
-<li>To HTML example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-guide.html -s --mathjax</code>.</li>
-<li>To PDF example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-guide.pdf --pdf-engine=pdflatex</code>.</li>
-<li>To Beamer example snippet: <code>pandoc src/markdown-guide.md -o build/markdown-slide.pdf -t beamer -V theme:Luebeck</code>. Note: Beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.</li>
+<li>To HTML example snippet: <code>pandoc markdown-guide.md -o markdown-guide.html -s --mathjax</code>.</li>
+<li>To PDF example snippet: <code>pandoc markdown-guide.md -o markdown-guide.pdf --pdf-engine=pdflatex</code>.</li>
+<li>To Beamer example snippet: <code>pandoc markdown-guide.md -o markdown-slide.pdf -t beamer -V theme:Luebeck</code>. Note: Beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.</li>
 <li><code>-s</code> means standalone and not a fragment; e.g. an HTML file with <code>head</code> and <code>body</code>.</li>
 <li><code>-f</code> and <code>-t</code> specifies input and output format respectively (markdown, latex, html), otherwise format is interpreted from file type.</li>
 <li><code>--toc</code> for table of contents; useful with <code>-c style.css</code>.</li>
@@ -873,7 +873,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 </ul>
 <h1 id="adding-references">Adding References</h1>
 <ol type="1">
-<li>Add a <code>.bib</code> file into a directory, and optionally a <code>.xcsl</code> file.
+<li>Add a <code>.bib</code> file into a directory, and optionally a <code>.csl</code> file.
 <ul>
 <li><a href="http://www.bibtex.org/Format/">Here</a> is a link in formating the <code>.bib</code> file.</li>
 <li><a href="https://www.zotero.org/styles">Here</a> is a link for <code>.csl</code> files for citation standards.</li>
@@ -884,9 +884,9 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li>Optionally add the <code>--csl=&lt;file-name&gt;.csl</code> argument to specify a certain citation style.</li>
 </ol>
 <h2 id="raw-18">Raw</h2>
-<pre><code>This is a self reference. [@self]</code></pre>
+<pre><code>This is a self reference. [@puth-mdg]</code></pre>
 <h2 id="formatted-18">Formatted</h2>
-<p>This is a self reference. <span class="citation" data-cites="self">[1]</span></p>
+<p>This is a self reference. <span class="citation" data-cites="puth-mdg">[1]</span></p>
 <h1 id="explore">Explore</h1>
 <ul>
 <li>Labels</li>
@@ -896,7 +896,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 </ul>
 <h1 class="unnumbered" id="references">References</h1>
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-self" class="csl-entry" role="doc-biblioentry">
+<div id="ref-puth-mdg" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">[1] </div><div class="csl-right-inline">P. Aim, <span>“Markdown guide,”</span> 2022. [Online]. Available: <a href="https://github.com/puth2314/markdown-guide">https://github.com/puth2314/markdown-guide</a></div>
 </div>
 </div>

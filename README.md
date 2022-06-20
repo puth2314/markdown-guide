@@ -449,9 +449,9 @@ I mainly use [ghostwriter](https://github.com/wereturtle/ghostwriter) and [pando
 
 ## Pandoc
 
-- To HTML example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.html -s --mathjax`.
-- To PDF example snippet: `pandoc src/markdown-guide.md -o build/markdown-guide.pdf --pdf-engine=pdflatex`.
-- To Beamer example snippet: `pandoc src/markdown-guide.md -o build/markdown-slide.pdf -t beamer -V theme:Luebeck`. Note: Beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.
+- To HTML example snippet: `pandoc markdown-guide.md -o markdown-guide.html -s --mathjax`.
+- To PDF example snippet: `pandoc markdown-guide.md -o markdown-guide.pdf --pdf-engine=pdflatex`.
+- To Beamer example snippet: `pandoc markdown-guide.md -o markdown-slide.pdf -t beamer -V theme:Luebeck`. Note: Beamer does not like footnotes that take more than the available space (hence make sure that this is satisfied before converting to beamer); also it is best remove any geometry tags and decrease the font size as well.
 - `-s` means standalone and not a fragment; e.g. an HTML file with `head` and `body`.
 - `-f` and `-t` specifies input and output format respectively (markdown, latex, html), otherwise format is interpreted from file type.
 - `--toc` for table of contents; useful with `-c style.css`.
