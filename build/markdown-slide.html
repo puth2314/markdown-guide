@@ -312,7 +312,7 @@ A &lt;https://directlink.tv&gt; and &lt;directlink@email.org&gt;.
 </div>
 <div id="raw-6" class="slide section level2">
 <h1>Raw</h1>
-<pre><code>![Markdown Icon](../images/markdown-icon.png  &quot;Markdown Icon&quot;){ height=50% }</code></pre>
+<pre><code>![Markdown Icon](../images/markdown-icon.png  &quot;Markdown Icon&quot;){height=50%}</code></pre>
 </div>
 <div id="formatted-5" class="slide section level2">
 <h1>Formatted</h1>
@@ -453,11 +453,11 @@ Comment
 </div>
 <div id="raw-12" class="slide section level2">
 <h1>Raw</h1>
-<pre><code>$$\frac{some}{69}\cdot\frac{420}{LaTeX}$$</code></pre>
+<pre><code>$$\frac{some}{69}\cdot\frac{420}{LaTeX}\tag{1}$$</code></pre>
 </div>
 <div id="formatted-10" class="slide section level2">
 <h1>Formatted</h1>
-<p><span class="math display">\[\frac{some}{69}\cdot\frac{420}{LaTeX}\]</span></p>
+<p><span class="math display">\[\frac{some}{69}\cdot\frac{420}{LaTeX}\tag{1}\]</span></p>
 </div>
 
 <div id="tables" class="title-slide slide section level1">
@@ -467,6 +467,7 @@ Comment
 <div id="note-6" class="slide section level2">
 <h1>Note</h1>
 <p>Generally and unfortunately, for some table styles, you cannot directly set the column width; unless you perform some wonky stuff with its behaviour.</p>
+<p>It is good practice to bold the table headers.</p>
 </div>
 <div id="raw-13" class="slide section level2">
 <h1>Raw</h1>
@@ -921,16 +922,97 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 </dl>
 </div>
 
-<div id="slides" class="title-slide slide section level1">
-<h1>Slides</h1>
+<div id="beamer-slides" class="title-slide slide section level1">
+<h1>Beamer Slides</h1>
 
 </div>
-<div id="header-less-content" class="slide section level2">
+
+<div id="header-less-content" class="title-slide slide section level1">
 <h1>Header-less Content</h1>
+
+</div>
+<div id="raw-24" class="slide section level2">
+<h1>Raw</h1>
+<pre><code>### Header
+
+Content here.
+
+###
+
+Content is also here.</code></pre>
+</div>
+<div id="formatted-22" class="slide section level2">
+<h1>Formatted</h1>
 <h3 id="header">Header</h3>
 <p>Content here.</p>
 <h3 id="section"></h3>
 <p>Content is also here.</p>
+</div>
+
+<div id="in-line-images" class="title-slide slide section level1">
+<h1>In-line Images</h1>
+
+</div>
+<div id="raw-25" class="slide section level2">
+<h1>Raw</h1>
+<pre><code>![Markdown Icon](../images/markdown-icon.png  &quot;Markdown Icon&quot;){ height=60% }\ 
+![Also a markdown Icon](../images/markdown-icon.png  &quot;Also a markdown Icon&quot;){height=30%}</code></pre>
+</div>
+<div id="formatted-23" class="slide section level2">
+<h1>Formatted</h1>
+<p><img src="../images/markdown-icon.png" title="Markdown Icon" style="height:60.0%" alt="Markdown Icon" />  <img src="../images/markdown-icon.png" title="Also a markdown Icon" style="height:30.0%" alt="Also a markdown Icon" /></p>
+</div>
+
+<div id="columns" class="title-slide slide section level1">
+<h1>Columns</h1>
+
+</div>
+<div id="raw-26" class="slide section level2">
+<h1>Raw</h1>
+<pre><code>::: columns
+
+:::: column
+
+Left text.
+
+::::
+
+:::: {.column width=20%}
+
+Right text.
+
+::::
+
+:::</code></pre>
+</div>
+<div id="formatted-24" class="slide section level2">
+<h1>Formatted</h1>
+<div class="columns">
+<div class="column">
+<p>Left text.</p>
+</div><div class="column" style="width:20%;">
+<p>Right text.</p>
+</div>
+</div>
+</div>
+
+<div id="labels" class="title-slide slide section level1">
+<h1>Labels</h1>
+
+</div>
+<div id="raw-27" class="slide section level2">
+<h1>Raw</h1>
+<pre><code>Reference Figure \ref{fig:md}.
+
+![Markdown Icon\label{fig:md}](../images/markdown-icon.png  &quot;Markdown Icon&quot;){height=70%}</code></pre>
+</div>
+<div id="formatted-25" class="slide section level2">
+<h1>Formatted</h1>
+<p>Reference Figure .</p>
+<div class="figure">
+<img src="../images/markdown-icon.png" title="Markdown Icon" style="height:70.0%" alt="" />
+<p class="caption">Markdown Icon</p>
+</div>
 </div>
 
 <div id="compiling" class="title-slide slide section level1">
@@ -978,6 +1060,7 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <ul>
 <li><a href="http://www.bibtex.org/Format/">Here</a> is a link in formating the <code>.bib</code> file.</li>
 <li><a href="https://www.zotero.org/styles">Here</a> is a link for <code>.csl</code> files for citation standards.</li>
+<li><a href="https://editor.citationstyles.org/visualEditor/">Here</a> is a link to edit your own <code>.csl</code> files.</li>
 </ul></li>
 <li>Within your markdown document, append <code>@</code> with the unique citation-key declared in the <code>.bib</code> file, to add references.</li>
 <li>Add the <code>-C</code> or <code>--cite-proc</code> argument when compiling, to process the citations.</li>
@@ -985,13 +1068,35 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li>Optionally add the <code>--csl=&lt;file-name&gt;.csl</code> argument to specify a certain citation style.</li>
 </ol>
 </div>
-<div id="raw-24" class="slide section level2">
+<div id="raw-28" class="slide section level2">
 <h1>Raw</h1>
-<pre><code>This is a self reference. [@puth-mdg]</code></pre>
+<pre><code>This is two self references. [@puth-mdg;@puth-mdg]</code></pre>
 </div>
-<div id="formatted-22" class="slide section level2">
+<div id="formatted-26" class="slide section level2">
 <h1>Formatted</h1>
-<p>This is a self reference. <span class="citation">[1]</span></p>
+<p>This is two self references. <span class="citation"><a href="#ref-puth-mdg" role="doc-biblioref">[1]</a>, <a href="#ref-puth-mdg" role="doc-biblioref">[1]</a></span></p>
+</div>
+
+<div id="references" class="title-slide slide section level1">
+<h1>References</h1>
+
+</div>
+<div id="note-10" class="slide section level2">
+<h1>Note</h1>
+<p>Otherwise, the references will automatically be appended to the end of the document.</p>
+</div>
+<div id="raw-29" class="slide section level2">
+<h1>Raw</h1>
+<pre><code>::: {#refs}
+:::</code></pre>
+</div>
+<div id="formatted-27" class="slide section level2">
+<h1>Formatted</h1>
+<div id="refs" class="references csl-bib-body">
+<div id="ref-puth-mdg" class="csl-entry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">P. Aim, <span>“Markdown guide,”</span> 2022. [Online]. Available: <a href="https://github.com/puth2314/markdown-guide">https://github.com/puth2314/markdown-guide</a></div>
+</div>
+</div>
 </div>
 <div id="explore" class="slide section level2">
 <h1>Explore</h1>
@@ -1001,14 +1106,6 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li><a href="https://pandoc.org/MANUAL.html#citations">Citations</a></li>
 <li>Citation Syntax</li>
 </ul>
-</div>
-<div id="references" class="slide section level2 unnumbered">
-<h1 class="unnumbered">References</h1>
-<div id="refs" class="references csl-bib-body">
-<div id="ref-puth-mdg" class="csl-entry">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">P. Aim, <span>“Markdown guide,”</span> 2022. [Online]. Available: <a href="https://github.com/puth2314/markdown-guide">https://github.com/puth2314/markdown-guide</a></div>
-</div>
-</div>
 </div>
 
 <div class="footnotes slide">

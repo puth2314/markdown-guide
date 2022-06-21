@@ -1,0 +1,31 @@
+---
+title: "Markdown Guide"
+
+author:
+
+- Puthearath Aim
+
+date: \today
+
+fontsize: 12pt
+
+geometry:
+
+- top = 30mm
+- left = 20mm
+- right = 20mm
+- heightrounded # bottom = 30mm
+
+linkcolor: blue
+
+numbersections: false
+
+toc: false
+
+# bibliography: misc/references.bib
+
+# csl: misc/ieee-with-url.csl
+
+link-citations: true
+
+...

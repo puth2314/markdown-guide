@@ -1,33 +1,3 @@
----
-title: "Markdown Guide"
-
-author:
-
-- Puthearath Aim
-
-# institute: ""
-
-date: \today
-
-fontsize: 10pt
-
-fonttheme: "default"
-
-theme: "metropolis" # "Luebeck"
-
-aspectratio: 169
-
-linkcolor: red # blue
-
-# linkstyle: bold
-
-section-titles: false
-
-toc: false
-
-# logo: images/logo.png
-...
-
 ## Introduction
 
 Welcome to a markdown guide. The aim to provide the general quirks of markdown; intended to be revisited as often as needed. 
@@ -222,12 +192,12 @@ Text within the quotes after the image directory is the text displayed when the 
 ## Raw
 
 ```
-![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){ height=50% }
+![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){height=50%}
 ```
 
 ## Formatted
 
-![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){ height=50% }
+![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){height=50%}
 
 # Block-quotes
 
@@ -374,12 +344,12 @@ Surround LaTeX code with double `$`.
 ## Raw
 
 ```
-$$\frac{some}{69}\cdot\frac{420}{LaTeX}$$
+$$\frac{some}{69}\cdot\frac{420}{LaTeX}\tag{1}$$
 ```
 
 ## Formatted
 
-$$\frac{some}{69}\cdot\frac{420}{LaTeX}$$
+$$\frac{some}{69}\cdot\frac{420}{LaTeX}\tag{1}$$
 
 # Tables
 
@@ -687,7 +657,21 @@ Term
 
 # Beamer Slides
 
-## Header-less Content
+# Header-less Content
+
+## Raw
+
+```
+### Header
+
+Content here.
+
+###
+
+Content is also here.
+```
+
+## Formatted
 
 ### Header
 
@@ -696,6 +680,76 @@ Content here.
 ###
 
 Content is also here.
+
+# In-line Images
+
+## Raw
+
+```
+![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){ height=60% }\ 
+![Also a markdown Icon](../images/markdown-icon.png  "Also a markdown Icon"){height=30%}
+```
+
+## Formatted
+
+![Markdown Icon](../images/markdown-icon.png  "Markdown Icon"){ height=60% }\ 
+![Also a markdown Icon](../images/markdown-icon.png  "Also a markdown Icon"){height=30%}
+
+# Columns
+
+## Raw
+
+```
+::: columns
+
+:::: column
+
+Left text.
+
+::::
+
+:::: {.column width=20%}
+
+Right text.
+
+::::
+
+:::
+```
+
+## Formatted
+
+::: columns
+
+:::: column
+
+Left text.
+
+::::
+
+:::: {.column width=20%}
+
+Right text.
+
+::::
+
+:::
+
+# Labels
+
+## Raw
+
+```
+Reference Figure \ref{fig:md}.
+
+![Markdown Icon\label{fig:md}](../images/markdown-icon.png  "Markdown Icon"){height=70%}
+```
+
+## Formatted
+
+Reference Figure \ref{fig:md}.
+
+![Markdown Icon\label{fig:md}](../images/markdown-icon.png  "Markdown Icon"){height=70%}
 
 # Compiling
 
@@ -732,6 +786,7 @@ Most text-editors should have support for markdown. Most IDE's should have plugi
 1. Add a `.bib` file into a directory, and optionally a `.csl` file.
 	- [Here](http://www.bibtex.org/Format/) is a link in formating the `.bib` file.
 	- [Here](https://www.zotero.org/styles) is a link for `.csl` files for citation standards.
+	- [Here](https://editor.citationstyles.org/visualEditor/) is a link to edit your own `.csl` files.
 2. Within your markdown document, append `@` with the unique citation-key declared in the `.bib` file, to add references. 
 3. Add the `-C` or `--cite-proc` argument when compiling, to process the citations.
 4. Add the `--bibliography=<file-name>.bib` argument to specify the path to the file (replace `<file-name>`).
@@ -740,12 +795,30 @@ Most text-editors should have support for markdown. Most IDE's should have plugi
 ## Raw
 
 ```
-This is a self reference. [@puth-mdg]
+This is two self references. [@puth-mdg;@puth-mdg]
 ```
 
 ## Formatted
 
-This is a self reference. [@puth-mdg]
+This is two self references. [@puth-mdg;@puth-mdg]
+
+# References
+
+## Note
+
+Otherwise, the references will automatically be appended to the end of the document.
+
+## Raw
+
+```
+::: {#refs}
+:::
+```
+
+## Formatted
+
+::: {#refs}
+:::
 
 ## Explore
 
@@ -753,5 +826,3 @@ This is a self reference. [@puth-mdg]
 - Images
 - [Citations](https://pandoc.org/MANUAL.html#citations)
 - Citation Syntax
-
-## References

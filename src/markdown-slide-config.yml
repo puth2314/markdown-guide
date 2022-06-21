@@ -1,0 +1,36 @@
+---
+title: "Markdown Guide"
+
+author:
+
+- Puthearath Aim
+
+# institute: ""
+
+date: \today
+
+fontsize: 10pt
+
+fonttheme: "default"
+
+theme: "metropolis" # "Luebeck"
+
+aspectratio: 169
+
+linkcolor: red # blue
+
+# linkstyle: bold
+
+section-titles: false
+
+toc: false
+
+# logo: images/logo.png
+
+# bibliography: ../misc/references.bib
+
+# csl: ../misc/ieee-with-url.csl
+
+link-citations: true
+
+...

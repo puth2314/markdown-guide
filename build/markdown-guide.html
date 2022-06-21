@@ -389,7 +389,7 @@ Also also horizontal rule:
 <h1 id="images">Images</h1>
 <p>Text within the quotes after the image directory is the text displayed when the image directory is not found.</p>
 <h2 id="raw-5">Raw</h2>
-<pre><code>![Markdown Icon](../images/markdown-icon.png  &quot;Markdown Icon&quot;){ height=100% }</code></pre>
+<pre><code>![Markdown Icon](../images/markdown-icon.png  &quot;Markdown Icon&quot;){height=100%}</code></pre>
 <h2 id="formatted-5">Formatted</h2>
 <figure>
 <img src="../images/markdown-icon.png" title="Markdown Icon" style="height:100.0%" alt="Markdown Icon" /><figcaption aria-hidden="true">Markdown Icon</figcaption>
@@ -489,9 +489,9 @@ and inline^[You do not have to create an identifier.].
 <h1 id="latex">LaTeX</h1>
 <p>Surround LaTeX code with double <code>$</code>.</p>
 <h2 id="raw-10">Raw</h2>
-<pre><code>$$\frac{some}{69}\cdot\frac{420}{LaTeX}$$</code></pre>
+<pre><code>$$\frac{some}{69}\cdot\frac{420}{LaTeX}\tag{1}$$</code></pre>
 <h2 id="formatted-10">Formatted</h2>
-<p><span class="math display">\[\frac{some}{69}\cdot\frac{420}{LaTeX}\]</span></p>
+<p><span class="math display">\[\frac{some}{69}\cdot\frac{420}{LaTeX}\tag{1}\]</span></p>
 <h1 id="tables">Tables</h1>
 <p>Generally and unfortunately, for some table styles, you cannot directly set the column width; unless you perform some wonky stuff with its behaviour.</p>
 <p>It is good practice to bold the table headers.</p>
@@ -850,6 +850,41 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <dd>This is an alternate definition.
 </dd>
 </dl>
+<h1 id="columns">Columns</h1>
+<h2 id="raw-18">Raw</h2>
+<pre><code>::: columns
+
+:::: column
+
+Left text.
+
+::::
+
+:::: {.column width=20%}
+
+Right text.
+
+::::
+
+:::</code></pre>
+<h2 id="formatted-18">Formatted</h2>
+<div class="columns">
+<div class="column">
+<p>Left text.</p>
+</div><div class="column" style="width:20%;">
+<p>Right text.</p>
+</div>
+</div>
+<h1 id="labels">Labels</h1>
+<h2 id="raw-19">Raw</h2>
+<pre><code>Reference Figure \ref{fig:md}.
+
+![Markdown Icon\label{fig:md}](../images/markdown-icon.png  &quot;Markdown Icon&quot;){height=70%}</code></pre>
+<h2 id="formatted-19">Formatted</h2>
+<p>Reference Figure .</p>
+<figure>
+<img src="../images/markdown-icon.png" title="Markdown Icon" style="height:70.0%" alt="Markdown Icon" /><figcaption aria-hidden="true">Markdown Icon</figcaption>
+</figure>
 <h1 id="compiling">Compiling</h1>
 <p>I mainly use <a href="https://github.com/wereturtle/ghostwriter">ghostwriter</a> and <a href="https://github.com/jgm/pandoc">Pandoc</a>.</p>
 <p>Most text-editors should have support for markdown. Most IDE’s should have plugins to view formatted markdown in real-time.</p>
@@ -879,16 +914,28 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <ul>
 <li><a href="http://www.bibtex.org/Format/">Here</a> is a link in formating the <code>.bib</code> file.</li>
 <li><a href="https://www.zotero.org/styles">Here</a> is a link for <code>.csl</code> files for citation standards.</li>
+<li><a href="https://editor.citationstyles.org/visualEditor/">Here</a> is a link to edit your own <code>.csl</code> files.</li>
 </ul></li>
 <li>Within your markdown document, append <code>@</code> with the unique citation-key declared in the <code>.bib</code> file, to add references.</li>
 <li>Add the <code>-C</code> or <code>--cite-proc</code> argument when compiling, to process the citations.</li>
 <li>Add the <code>--bibliography=&lt;file-name&gt;.bib</code> argument to specify the path to the file (replace <code>&lt;file-name&gt;</code>).</li>
 <li>Optionally add the <code>--csl=&lt;file-name&gt;.csl</code> argument to specify a certain citation style.</li>
 </ol>
-<h2 id="raw-18">Raw</h2>
-<pre><code>This is a self reference. [@puth-mdg]</code></pre>
-<h2 id="formatted-18">Formatted</h2>
-<p>This is a self reference. <span class="citation" data-cites="puth-mdg">[1]</span></p>
+<h2 id="raw-20">Raw</h2>
+<pre><code>This is two self references. [@puth-mdg;@puth-mdg]</code></pre>
+<h2 id="formatted-20">Formatted</h2>
+<p>This is two self references. <span class="citation" data-cites="puth-mdg puth-mdg"><a href="#ref-puth-mdg" role="doc-biblioref">[1]</a>, <a href="#ref-puth-mdg" role="doc-biblioref">[1]</a></span></p>
+<h1 id="references">References</h1>
+<p>Otherwise, the references will automatically be appended to the end of the document.</p>
+<h2 id="raw-21">Raw</h2>
+<pre><code>::: {#refs}
+:::</code></pre>
+<h2 id="formatted-21">Formatted</h2>
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-puth-mdg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">P. Aim, <span>“Markdown guide,”</span> 2022. [Online]. Available: <a href="https://github.com/puth2314/markdown-guide">https://github.com/puth2314/markdown-guide</a></div>
+</div>
+</div>
 <h1 id="explore">Explore</h1>
 <ul>
 <li>Labels</li>
@@ -896,12 +943,6 @@ f(x) = Ae^-bx^ describes exponential decay.</code></pre>
 <li><a href="https://pandoc.org/MANUAL.html#citations">Citations</a></li>
 <li>Citation Syntax</li>
 </ul>
-<h1 class="unnumbered" id="references">References</h1>
-<div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-puth-mdg" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">[1] </div><div class="csl-right-inline">P. Aim, <span>“Markdown guide,”</span> 2022. [Online]. Available: <a href="https://github.com/puth2314/markdown-guide">https://github.com/puth2314/markdown-guide</a></div>
-</div>
-</div>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
