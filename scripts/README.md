@@ -1,6 +1,6 @@
 # Note
 
-`conver-to.sh` is deprecated because of the `Makefile`.
+`convert-to.sh` is deprecated because of the `Makefile`.
 
 # How To Run
 
