@@ -387,6 +387,8 @@ $$\frac{some}{69}\cdot\frac{420}{LaTeX}$$
 
 Generally and unfortunately, for some table styles, you cannot directly set the column width; unless you perform some wonky stuff with its behaviour.
 
+It is good practice to bold the table headers.
+
 ## Raw
 
 ```
@@ -682,6 +684,18 @@ Term
 Term
 : This is a definition.
 : This is an alternate definition.
+
+# Beamer Slides
+
+## Header-less Content
+
+### Header
+
+Content here.
+
+###
+
+Content is also here.
 
 # Compiling
 

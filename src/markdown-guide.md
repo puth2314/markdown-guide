@@ -414,6 +414,8 @@ $$\frac{some}{69}\cdot\frac{420}{LaTeX}$$
 
 Generally and unfortunately, for some table styles, you cannot directly set the column width; unless you perform some wonky stuff with its behaviour.
 
+It is good practice to bold the table headers.
+
 ## Raw
 
 ```
